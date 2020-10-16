@@ -1,0 +1,97 @@
+38f9d3c5cecc:~ dsosasha$ aws elasticbeanstalk update-application-resource-lifecycle --application-name test --cli-input-json '{"ResourceLifecycleConfig":{"ServiceRole":"arn:aws:iam::558148861497:role/aws-elasticbeanstalk-service-role","VersionLifecycleConfig":{"MaxCountRule":{"Enabled":true,"MaxCount":10,"DeleteSourceFromS3":true},"MaxAgeRule":{"Enabled":false,"MaxAgeInDays":10,"DeleteSourceFromS3":false}}}}' --profile SCassumerole --debug
+2020-10-10 12:17:43,976 - MainThread - awscli.clidriver - DEBUG - CLI version: aws-cli/2.0.29 Python/3.7.4 Darwin/18.7.0 botocore/2.0.0dev33
+2020-10-10 12:17:43,977 - MainThread - awscli.clidriver - DEBUG - Arguments entered to CLI: ['elasticbeanstalk', 'update-application-resource-lifecycle', '--application-name', 'test', '--cli-input-json', '{"ResourceLifecycleConfig":{"ServiceRole":"arn:aws:iam::558148861497:role/aws-elasticbeanstalk-service-role","VersionLifecycleConfig":{"MaxCountRule":{"Enabled":true,"MaxCount":10,"DeleteSourceFromS3":true},"MaxAgeRule":{"Enabled":false,"MaxAgeInDays":10,"DeleteSourceFromS3":false}}}}', '--profile', 'SCassumerole', '--debug']
+2020-10-10 12:17:43,977 - MainThread - botocore.hooks - DEBUG - Event session-initialized: calling handler <function add_timestamp_parser at 0x115d887a0>
+2020-10-10 12:17:43,977 - MainThread - botocore.hooks - DEBUG - Event session-initialized: calling handler <function register_uri_param_handler at 0x115677680>
+2020-10-10 12:17:43,978 - MainThread - botocore.hooks - DEBUG - Event session-initialized: calling handler <function add_binary_formatter at 0x115dd83b0>
+2020-10-10 12:17:43,978 - MainThread - botocore.hooks - DEBUG - Event session-initialized: calling handler <function inject_assume_role_provider_cache at 0x1156a0e60>
+2020-10-10 12:17:43,996 - MainThread - botocore.credentials - DEBUG - Skipping environment variable credential check because profile name was explicitly set.
+2020-10-10 12:17:43,996 - MainThread - botocore.hooks - DEBUG - Event session-initialized: calling handler <function attach_history_handler at 0x115c198c0>
+2020-10-10 12:17:43,997 - MainThread - botocore.hooks - DEBUG - Event session-initialized: calling handler <function inject_json_file_cache at 0x115bbee60>
+2020-10-10 12:17:44,010 - MainThread - botocore.loaders - DEBUG - Loading JSON file: /usr/local/aws-cli/botocore/data/elasticbeanstalk/2010-12-01/service-2.json
+2020-10-10 12:17:44,020 - MainThread - botocore.hooks - DEBUG - Event building-command-table.elasticbeanstalk: calling handler <function add_waiters at 0x115d96440>
+2020-10-10 12:17:44,043 - MainThread - awscli.clidriver - DEBUG - OrderedDict([('application-name', <awscli.arguments.CLIArgument object at 0x1168024d0>), ('resource-lifecycle-config', <awscli.arguments.CLIArgument object at 0x116802590>)])
+2020-10-10 12:17:44,043 - MainThread - botocore.hooks - DEBUG - Event building-argument-table.elasticbeanstalk.update-application-resource-lifecycle: calling handler <function add_streaming_output_arg at 0x115d8b950>
+2020-10-10 12:17:44,043 - MainThread - botocore.hooks - DEBUG - Event building-argument-table.elasticbeanstalk.update-application-resource-lifecycle: calling handler <function add_cli_input_json at 0x1156a88c0>
+2020-10-10 12:17:44,044 - MainThread - botocore.hooks - DEBUG - Event building-argument-table.elasticbeanstalk.update-application-resource-lifecycle: calling handler <function add_cli_input_yaml at 0x1156a8b00>
+2020-10-10 12:17:44,045 - MainThread - botocore.hooks - DEBUG - Event building-argument-table.elasticbeanstalk.update-application-resource-lifecycle: calling handler <function unify_paging_params at 0x115bdab90>
+2020-10-10 12:17:44,082 - MainThread - botocore.loaders - DEBUG - Loading JSON file: /usr/local/aws-cli/botocore/data/elasticbeanstalk/2010-12-01/paginators-1.json
+2020-10-10 12:17:44,083 - MainThread - botocore.hooks - DEBUG - Event building-argument-table.elasticbeanstalk.update-application-resource-lifecycle: calling handler <function add_generate_skeleton at 0x115cc3ef0>
+2020-10-10 12:17:44,083 - MainThread - botocore.hooks - DEBUG - Event building-argument-table.elasticbeanstalk.update-application-resource-lifecycle: calling handler <function add_auto_prompt at 0x115dd6560>
+2020-10-10 12:17:44,083 - MainThread - botocore.hooks - DEBUG - Event before-building-argument-table-parser.elasticbeanstalk.update-application-resource-lifecycle: calling handler <bound method OverrideRequiredArgsArgument.override_required_args of <awscli.customizations.cliinput.CliInputJSONArgument object at 0x116802550>>
+2020-10-10 12:17:44,083 - MainThread - botocore.hooks - DEBUG - Event before-building-argument-table-parser.elasticbeanstalk.update-application-resource-lifecycle: calling handler <bound method OverrideRequiredArgsArgument.override_required_args of <awscli.customizations.cliinput.CliInputYAMLArgument object at 0x116802410>>
+2020-10-10 12:17:44,083 - MainThread - botocore.hooks - DEBUG - Event before-building-argument-table-parser.elasticbeanstalk.update-application-resource-lifecycle: calling handler <bound method GenerateCliSkeletonArgument.override_required_args of <awscli.customizations.generatecliskeleton.GenerateCliSkeletonArgument object at 0x1151e6650>>
+2020-10-10 12:17:44,084 - MainThread - botocore.hooks - DEBUG - Event before-building-argument-table-parser.elasticbeanstalk.update-application-resource-lifecycle: calling handler <bound method AutoPromptArgument.override_required_args of <awscli.customizations.autoprompt.AutoPromptArgument object at 0x11680ef10>>
+2020-10-10 12:17:44,085 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.elasticbeanstalk.update-application-resource-lifecycle.application-name: calling handler <awscli.paramfile.URIArgumentHandler object at 0x115e63690>
+2020-10-10 12:17:44,085 - MainThread - botocore.hooks - DEBUG - Event process-cli-arg.elasticbeanstalk.update-application-resource-lifecycle: calling handler <awscli.argprocess.ParamShorthandParser object at 0x115a9c850>
+2020-10-10 12:17:44,086 - MainThread - awscli.arguments - DEBUG - Unpacked value of 'test' for parameter "application_name": 'test'
+2020-10-10 12:17:44,086 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.elasticbeanstalk.update-application-resource-lifecycle.resource-lifecycle-config: calling handler <awscli.paramfile.URIArgumentHandler object at 0x115e63690>
+2020-10-10 12:17:44,086 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.elasticbeanstalk.update-application-resource-lifecycle.cli-input-json: calling handler <awscli.paramfile.URIArgumentHandler object at 0x115e63690>
+2020-10-10 12:17:44,086 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.elasticbeanstalk.update-application-resource-lifecycle.cli-input-yaml: calling handler <awscli.paramfile.URIArgumentHandler object at 0x115e63690>
+2020-10-10 12:17:44,086 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.elasticbeanstalk.update-application-resource-lifecycle.generate-cli-skeleton: calling handler <awscli.paramfile.URIArgumentHandler object at 0x115e63690>
+2020-10-10 12:17:44,087 - MainThread - botocore.hooks - DEBUG - Event load-cli-arg.elasticbeanstalk.update-application-resource-lifecycle.cli-auto-prompt: calling handler <awscli.paramfile.URIArgumentHandler object at 0x115e63690>
+2020-10-10 12:17:44,087 - MainThread - botocore.hooks - DEBUG - Event calling-command.elasticbeanstalk.update-application-resource-lifecycle: calling handler <bound method CliInputArgument.add_to_call_parameters of <awscli.customizations.cliinput.CliInputJSONArgument object at 0x116802550>>
+2020-10-10 12:17:44,087 - MainThread - botocore.hooks - DEBUG - Event calling-command.elasticbeanstalk.update-application-resource-lifecycle: calling handler <bound method CliInputArgument.add_to_call_parameters of <awscli.customizations.cliinput.CliInputYAMLArgument object at 0x116802410>>
+2020-10-10 12:17:44,087 - MainThread - botocore.hooks - DEBUG - Event calling-command.elasticbeanstalk.update-application-resource-lifecycle: calling handler <bound method GenerateCliSkeletonArgument.generate_skeleton of <awscli.customizations.generatecliskeleton.GenerateCliSkeletonArgument object at 0x1151e6650>>
+2020-10-10 12:17:44,088 - MainThread - botocore.hooks - DEBUG - Event calling-command.elasticbeanstalk.update-application-resource-lifecycle: calling handler <bound method AutoPromptArgument.auto_prompt_arguments of <awscli.customizations.autoprompt.AutoPromptArgument object at 0x11680ef10>>
+2020-10-10 12:17:44,089 - MainThread - botocore.credentials - DEBUG - Looking for credentials via: assume-role
+2020-10-10 12:17:44,089 - MainThread - botocore.credentials - DEBUG - Looking for credentials via: assume-role-with-web-identity
+2020-10-10 12:17:44,089 - MainThread - botocore.credentials - DEBUG - Looking for credentials via: sso
+2020-10-10 12:17:44,089 - MainThread - botocore.credentials - DEBUG - Looking for credentials via: shared-credentials-file
+2020-10-10 12:17:44,091 - MainThread - botocore.credentials - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2020-10-10 12:17:44,092 - MainThread - botocore.loaders - DEBUG - Loading JSON file: /usr/local/aws-cli/botocore/data/endpoints.json
+2020-10-10 12:17:44,102 - MainThread - botocore.hooks - DEBUG - Event choose-service-name: calling handler <function handle_service_name_alias at 0x114ece170>
+2020-10-10 12:17:44,105 - MainThread - botocore.hooks - DEBUG - Event creating-client-class.elastic-beanstalk: calling handler <function add_generate_presigned_url at 0x114e7e170>
+2020-10-10 12:17:44,111 - MainThread - botocore.endpoint - DEBUG - Setting elasticbeanstalk timeout as (60, 60)
+2020-10-10 12:17:44,115 - MainThread - botocore.hooks - DEBUG - Event provide-client-params.elastic-beanstalk.UpdateApplicationResourceLifecycle: calling handler <function base64_decode_input_blobs at 0x115dd8440>
+2020-10-10 12:17:44,177 - MainThread - botocore.hooks - DEBUG - Event before-parameter-build.elastic-beanstalk.UpdateApplicationResourceLifecycle: calling handler <function generate_idempotent_uuid at 0x114ed2dd0>
+2020-10-10 12:17:44,178 - MainThread - botocore.hooks - DEBUG - Event before-call.elastic-beanstalk.UpdateApplicationResourceLifecycle: calling handler <function inject_api_version_header_if_needed at 0x114ed7680>
+2020-10-10 12:17:44,178 - MainThread - botocore.endpoint - DEBUG - Making request for OperationModel(name=UpdateApplicationResourceLifecycle) with params: {'url_path': '/', 'query_string': '', 'method': 'POST', 'headers': {'Content-Type': 'application/x-www-form-urlencoded; charset=utf-8', 'User-Agent': 'aws-cli/2.0.29 Python/3.7.4 Darwin/18.7.0 botocore/2.0.0dev33'}, 'body': {'Action': 'UpdateApplicationResourceLifecycle', 'Version': '2010-12-01', 'ApplicationName': 'test', 'ResourceLifecycleConfig.ServiceRole': 'arn:aws:iam::558148861497:role/aws-elasticbeanstalk-service-role', 'ResourceLifecycleConfig.VersionLifecycleConfig.MaxCountRule.Enabled': 'true', 'ResourceLifecycleConfig.VersionLifecycleConfig.MaxCountRule.MaxCount': 10, 'ResourceLifecycleConfig.VersionLifecycleConfig.MaxCountRule.DeleteSourceFromS3': 'true', 'ResourceLifecycleConfig.VersionLifecycleConfig.MaxAgeRule.Enabled': 'false', 'ResourceLifecycleConfig.VersionLifecycleConfig.MaxAgeRule.MaxAgeInDays': 10, 'ResourceLifecycleConfig.VersionLifecycleConfig.MaxAgeRule.DeleteSourceFromS3': 'false'}, 'url': 'https://elasticbeanstalk.us-east-1.amazonaws.com/', 'context': {'client_region': 'us-east-1', 'client_config': <botocore.config.Config object at 0x116aa5d10>, 'has_streaming_input': False, 'auth_type': None}}
+2020-10-10 12:17:44,179 - MainThread - botocore.hooks - DEBUG - Event request-created.elastic-beanstalk.UpdateApplicationResourceLifecycle: calling handler <bound method RequestSigner.handler of <botocore.signers.RequestSigner object at 0x116aa5c10>>
+2020-10-10 12:17:44,179 - MainThread - botocore.hooks - DEBUG - Event choose-signer.elastic-beanstalk.UpdateApplicationResourceLifecycle: calling handler <function set_operation_specific_signer at 0x114ec5e60>
+2020-10-10 12:17:44,180 - MainThread - botocore.credentials - DEBUG - Credentials for role retrieved from cache.
+2020-10-10 12:17:44,181 - MainThread - botocore.credentials - DEBUG - Retrieved credentials will expire at: 2020-10-10 07:22:55+00:00
+2020-10-10 12:17:44,183 - MainThread - botocore.auth - DEBUG - Calculating signature using v4 auth.
+2020-10-10 12:17:44,183 - MainThread - botocore.auth - DEBUG - CanonicalRequest:
+POST
+/
+
+content-type:application/x-www-form-urlencoded; charset=utf-8
+host:elasticbeanstalk.us-east-1.amazonaws.com
+x-amz-date:20201010T064744Z
+x-amz-security-token:IQoJb3JpZ2luX2VjEB8aCXVzLWVhc3QtMSJGMEQCIEqjLfId6WzMLu5+6XFa7qVkxsrgSucAHOelTEjxklpQAiAKfVCXYc7vZOPM5/xe7IJEo1BreHT0boOc4egwcg4HPSqoAghYEAEaDDU1ODE0ODg2MTQ5NyIMVP4zJ/R5XzKfnU0IKoUChK69VVZrpZL18j16juDtrlxdVI1q63STct5EdEybBQjaFZhZEQD/b7sNt5PzSewBt+eMT1RFQXGkbKob0OlfU8GzoxcquKVwjaOqGv0zUZPgZyCWbudO9QLNL1widi11XIXkP9uvMbk7JmKwT/JIAMreju0nhiY0EL9vydheNODxZ5gHw9krmV+u5ch5m6EHikoqVOMHMMhiNQfZoNfqR2jEa81kmVPXojylyDyTLE4U9aTVXu2V6vsfz1sgOEt+7g63/rx4I3DIwEptL7mj2a3H1rFqQ6RxSEH0mbkM/sKEN75AjKloxTJZkrB9AHvSZTDuDjljRBiyXDWrtOPZNv+b02SNML+mhfwFOp4BNjWquFFaRyxiStTQJXAucf98p6PGtqrft7A3sx2n7/cX5DFyxmn32v9dkjjyT7TErkkRtBlHEb03RlLsN6n2P8hpRqDzJfFdI6qOc+GeZkbHWwWFdvIL2LbKGnpqVbhv7Ud+Z9fUdnMlBwk0crX4JjWrEfF7zmUNGM/7DaYYvgoWD50kwSw8X0vASyV9ThtsvLk6qPvLFcsqby6iidc=
+
+content-type;host;x-amz-date;x-amz-security-token
+dfd1c18b932fe4ded5253cc37219bbadd4074e0128224b98c04caadfd2109d4f
+2020-10-10 12:17:44,184 - MainThread - botocore.auth - DEBUG - StringToSign:
+AWS4-HMAC-SHA256
+20201010T064744Z
+20201010/us-east-1/elasticbeanstalk/aws4_request
+4744eaef3da674aba0525b2ba9f78b906d6d9fc981fa20f4bb86e00ed52882b8
+2020-10-10 12:17:44,185 - MainThread - botocore.auth - DEBUG - Signature:
+53e7b5de0fec160da402197f2a6073179b2451d6b99676a556c2a6e5f42776ef
+2020-10-10 12:17:44,186 - MainThread - botocore.endpoint - DEBUG - Sending http request: <AWSPreparedRequest stream_output=False, method=POST, url=https://elasticbeanstalk.us-east-1.amazonaws.com/, headers={'Content-Type': b'application/x-www-form-urlencoded; charset=utf-8', 'User-Agent': b'aws-cli/2.0.29 Python/3.7.4 Darwin/18.7.0 botocore/2.0.0dev33', 'X-Amz-Date': b'20201010T064744Z', 'X-Amz-Security-Token': b'IQoJb3JpZ2luX2VjEB8aCXVzLWVhc3QtMSJGMEQCIEqjLfId6WzMLu5+6XFa7qVkxsrgSucAHOelTEjxklpQAiAKfVCXYc7vZOPM5/xe7IJEo1BreHT0boOc4egwcg4HPSqoAghYEAEaDDU1ODE0ODg2MTQ5NyIMVP4zJ/R5XzKfnU0IKoUChK69VVZrpZL18j16juDtrlxdVI1q63STct5EdEybBQjaFZhZEQD/b7sNt5PzSewBt+eMT1RFQXGkbKob0OlfU8GzoxcquKVwjaOqGv0zUZPgZyCWbudO9QLNL1widi11XIXkP9uvMbk7JmKwT/JIAMreju0nhiY0EL9vydheNODxZ5gHw9krmV+u5ch5m6EHikoqVOMHMMhiNQfZoNfqR2jEa81kmVPXojylyDyTLE4U9aTVXu2V6vsfz1sgOEt+7g63/rx4I3DIwEptL7mj2a3H1rFqQ6RxSEH0mbkM/sKEN75AjKloxTJZkrB9AHvSZTDuDjljRBiyXDWrtOPZNv+b02SNML+mhfwFOp4BNjWquFFaRyxiStTQJXAucf98p6PGtqrft7A3sx2n7/cX5DFyxmn32v9dkjjyT7TErkkRtBlHEb03RlLsN6n2P8hpRqDzJfFdI6qOc+GeZkbHWwWFdvIL2LbKGnpqVbhv7Ud+Z9fUdnMlBwk0crX4JjWrEfF7zmUNGM/7DaYYvgoWD50kwSw8X0vASyV9ThtsvLk6qPvLFcsqby6iidc=', 'Authorization': b'AWS4-HMAC-SHA256 Credential=ASIAYD5CDXY4YDGBMKF2/20201010/us-east-1/elasticbeanstalk/aws4_request, SignedHeaders=content-type;host;x-amz-date;x-amz-security-token, Signature=53e7b5de0fec160da402197f2a6073179b2451d6b99676a556c2a6e5f42776ef', 'Content-Length': '652'}>
+2020-10-10 12:17:44,187 - MainThread - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): elasticbeanstalk.us-east-1.amazonaws.com:443
+2020-10-10 12:17:45,364 - MainThread - urllib3.connectionpool - DEBUG - https://elasticbeanstalk.us-east-1.amazonaws.com:443 "POST / HTTP/1.1" 403 324
+2020-10-10 12:17:45,365 - MainThread - botocore.parsers - DEBUG - Response headers: {'Content-Type': 'text/xml', 'Date': 'Sat, 10 Oct 2020 06:47:44 GMT', 'x-amzn-RequestId': 'f3e58bfb-f263-4812-b08e-7e50df9f6a55', 'Content-Length': '324', 'Connection': 'keep-alive'}
+2020-10-10 12:17:45,365 - MainThread - botocore.parsers - DEBUG - Response body:
+b'<ErrorResponse xmlns="http://elasticbeanstalk.amazonaws.com/docs/2010-12-01/">\n  <Error>\n    <Type>Sender</Type>\n    <Code>InsufficientPrivilegesException</Code>\n    <Message>Insufficient privileges for IAM PassRole Action.</Message>\n  </Error>\n  <RequestId>f3e58bfb-f263-4812-b08e-7e50df9f6a55</RequestId>\n</ErrorResponse>\n'
+2020-10-10 12:17:45,366 - MainThread - botocore.parsers - DEBUG - Response headers: {'Content-Type': 'text/xml', 'Date': 'Sat, 10 Oct 2020 06:47:44 GMT', 'x-amzn-RequestId': 'f3e58bfb-f263-4812-b08e-7e50df9f6a55', 'Content-Length': '324', 'Connection': 'keep-alive'}
+2020-10-10 12:17:45,366 - MainThread - botocore.parsers - DEBUG - Response body:
+b'<ErrorResponse xmlns="http://elasticbeanstalk.amazonaws.com/docs/2010-12-01/">\n  <Error>\n    <Type>Sender</Type>\n    <Code>InsufficientPrivilegesException</Code>\n    <Message>Insufficient privileges for IAM PassRole Action.</Message>\n  </Error>\n  <RequestId>f3e58bfb-f263-4812-b08e-7e50df9f6a55</RequestId>\n</ErrorResponse>\n'
+2020-10-10 12:17:45,367 - MainThread - botocore.hooks - DEBUG - Event needs-retry.elastic-beanstalk.UpdateApplicationResourceLifecycle: calling handler <bound method RetryHandler.needs_retry of <botocore.retries.standard.RetryHandler object at 0x116af9450>>
+2020-10-10 12:17:45,367 - MainThread - botocore.retries.standard - DEBUG - Not retrying request.
+2020-10-10 12:17:45,367 - MainThread - botocore.hooks - DEBUG - Event after-call.elastic-beanstalk.UpdateApplicationResourceLifecycle: calling handler <bound method RetryQuotaChecker.release_retry_quota of <botocore.retries.standard.RetryQuotaChecker object at 0x116aa5050>>
+2020-10-10 12:17:45,367 - MainThread - awscli.clidriver - DEBUG - Service returned an exception
+Traceback (most recent call last):
+  File "awscli/clidriver.py", line 335, in main
+  File "awscli/clidriver.py", line 507, in __call__
+  File "awscli/clidriver.py", line 685, in __call__
+  File "awscli/clidriver.py", line 806, in invoke
+  File "awscli/clidriver.py", line 818, in _make_client_call
+  File "botocore/client.py", line 208, in _api_call
+  File "botocore/client.py", line 527, in _make_api_call
+botocore.errorfactory.InsufficientPrivilegesException: An error occurred (InsufficientPrivilegesException) when calling the UpdateApplicationResourceLifecycle operation: Insufficient privileges for IAM PassRole Action.
+
+An error occurred (InsufficientPrivilegesException) when calling the UpdateApplicationResourceLifecycle operation: Insufficient privileges for IAM PassRole Action.
+38f9d3c5cecc:~ dsosasha$ 
